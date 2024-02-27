@@ -1,73 +1,74 @@
 # Projeto Vanilla
 
-Construção da API para consumo futuro.
+A solução definitiva para gerenciar usuários com nossa API de cadastro! 
+Desenvolvida para integrar perfeitamente frontend e backend, nossa API oferece segurança de dados de última geração, com autenticação e autorização robustas. 
+Sua escalabilidade e flexibilidade são incomparáveis, seguindo os padrões RESTful mais avançados e as melhores práticas de codificação. 
 
 ## Requisitos
 
-- [ ] CRUD de categorias
-- [ ] CRUD DE CATEGORIAS
-- [ ] CRUD DE MOVIMENTAÇÕES
-- [ ] CRUD DE USUÁRIOS
-- [ ] AUTENTICACAO
-- [ ] DASHBOARD
+-[] CRUD de Clientes
+-[] CRUD de produto
+-[] CRUD de usuários
+-[] CRUD de ordem de serviço
+-[] Autenticação
+-[] Dashboard
 
-## DOCUMENTAÇÃO DA API
+## Documentação da API
 
-### ENDPOINT
+### Endpoint de Clientes
 
-- [LISTAR CATEGORIAS](#listar-categorias)
-- [CADASTRAR CATEGORIAS](#cadastrar-categoria)
-- [DETALHAR CATEGORIAS](#detalhar-categoria)
-- [APAGAR CATEGORIAS](#apagar-categoria)
-- [ATUALIZAR CATEGORIAS](#atualizar-categoria)
+- [Listar clientes](#listar-clientes)
+- [Cadastrar clientes](#cadastrar-clientes)
+- [Detalhar clientes](#detalhar-clientes)
+- [Apagar clientes](#)
+- [Atualizar clientes](#)
 
-### LISTAR CATEGORIAS
 
-`GET` /categoria
+### Listar Clientes
 
-Retorna um array com as categorias do usuario autenticado
+`GET` /clientes
+
+>Se o usuário estiver autenticado, retorna um array com os clientes cadastrados.
 
 #### Exemplo de resposta
 
 ```js
-[
-	{
-		"id": 1,
-		"nome": "da-categoria",
-		"icone": "nome-do-icone",
-	}
-]
+{
+	"id": 1,
+
+	"nome": "clientes",
+	"icone": "clientes-icon",
+}
 ```
 
 #### Codigo de status
-|codigo | descricao
-|-------|----------
-|200 | lista de categorias retornado com sucesso
-|401 | não autenticado. Se autentique em /link
+
+|Código    | Descrição
+|:---------:|----------
+| 200          | lista de categorias retornado com sucesso.
+| 401           | não autenticado. Se autentique em /link.
 
 ---
 
-### CADASTRAR CATEGORIA
+### Cadastrar Clientes
 
-`POST` /categoria
+`POST` /clientes
 
-Cadastra uma categoria com os dados enviados no corpo da requisição
+> Cadastra uma categoria com os dados enviados no corpo da requisição. 
 
 #### Corpo da requisição
 
-| campo | tipo | obrigatório | descrição
+| Campo | Tipo | Obrigatório | Descrição
 |--------|-----|:------------:|-----------
-| nome | string | sim | escerver algo que ajude quem vai fazer isso
-| icone | string | nao | nome do icone conforme material icons
+| nome | string | sim | o nome do cliente master.
+| icone | string | nao | ../img/client/?.
 
 #### Exemplo de requisição
 
 ```js
-
 {
-	"nome": "Alimentação"
+	"nome": "Vanilla"
 }
-
 ```
 
 #### Exemplo de resposta
@@ -75,85 +76,85 @@ Cadastra uma categoria com os dados enviados no corpo da requisição
 ```js
 {
 	"id": 1
-	"nome": "Alimentação",
-	"icone": "fast-food"
+
+	"nome": "Vanilla",
+	"icone": "vanilla-icon"
 }
 ```
 #### Codigo de status
-|codigo | descricao
-|-------|----------
-|201 | categoria foi criada com sucesso
-|400| validação falhou. verifique o corpo da requisição
-|401 | não autenticado. Se autentique em /link
+
+|Código | Descrição
+|:---------:|----------|
+|201 | O cliente foi criado com sucesso.
+|400| A validação falhou. verifique o corpo da requisição.
+|401 | Não autenticado. Necessário autenticação ../link.
 
 
 ---
 
-### Detalhar Categoria
+### Detalhar Clientes
 
-`GET` /categoria/`{id}`
+`GET` /cliente/`id`
 
-retorna os detalhes da categoria com o `id` informado no path.
+>Retorna os detalhes dos clientes de acordo com o `id` informado no path.
 
 #### Exemplo de resposta
 
 ```js
-// GET / categoria / 1
 {
 	"id": 1
-	"nome": "Alimentação",
-	"icone": "fast-food"
-}
 
+	"nome": "Vanilla",
+	"icone": "vanilla-icon"
+}
 ```
 #### Codigo de status
-|codigo | descricao
-|-------|----------
-|201 | categoria foi criada com sucesso
-|400| validação falhou. verifique o corpo da requisição
-|401 | não autenticado. Se autentique em /link
-|403 | NAO AUTORIZADO. essa categoria nao pertence ao usuario autenticado
-|404 | NAO EXISTE CATEGORIA COM O `{id}` INFORMADO
+
+|Código | Descrição
+|:---------:|----------|
+|201 | Cliente criado com sucesso.
+|400| A validação falhou. Verifique o corpo da requisição.
+|401 | Não autenticado. Necessário autenticação ../link.
+|403 | Não autorizado. Esse cliente nao pertence ao usuário autenticado.
+|404 | Não existe cliente com o `id` informado.
 
 ---
 
-### APAGAR CATEGORIA
+### Apagar Clientes
 
-`DELETE` / CATEGORIA/`{ID}`
+`DELETE` /clientes/`id`
 
-apaga a categoria com o `id` informado no path
+Apaga o cliente selecionado com o `id` informado no path.
 
 #### codigo de status
 
-|codigo | descricao
-|-------|----------
-|201 | categoria foi criada com sucesso
-|401 | não autenticado. Se autentique em /login
-|403 | NAO AUTORIZADO. essa categoria nao pertence ao usuario autenticado
-|404 | NAO EXISTE CATEGORIA COM O `id` INFORMADO
+|Código | Descrição
+|:---------:|----------|
+|201 | A categoria foi apagada com sucesso.
+|401 | Não autenticado. Necessário autenticação ../link.
+|403 | Não autorizado. Esse cliente nao pertence ao usuário autenticado.
+|404 | Não existe cliente com o `id` informado.
 
-### atualizar categoria
+### Atualizar Clientes
 
-`PUT`  / categoria /`{id}`
+`PUT`  /clientes/`id`
 
-Atualiza os dados da categoria com o `id` informado no path, utilizando as informações do corpo da requisição 
+Atualiza os dados do cliente com o `id` informado no path, utilizando as informações do corpo da requisição.
 
 #### Corpo da requisição
 
-| campo | tipo | obrigatório | descrição
+| Campo | Tipo | Obrigatório | Descrição
 |--------|-----|:------------:|-----------
-| nome | string | sim | o novo nome da categoria
-| icone | string | sim | obrigatório enviar o icone conforme material icon
+| nome | string | sim | O nome do cliente alterado.
+| icone | string | sim | O novo ícone do cliente.
 
 #### Exemplo de requisição
 
 ```js
-
 {
-	"nome": "Restaurante",
-	"icone": "fast-food"
+	"nome": "Purple",
+	"icone": "purple-icon"
 }
-
 ```
 
 #### Exemplo de resposta
@@ -161,15 +162,17 @@ Atualiza os dados da categoria com o `id` informado no path, utilizando as infor
 ```js
 {
 	"id": 1
-	"nome": "Restaurante",
-	"icone": "fast-food"
+
+	"nome": "Purple",
+	"icone": "purple-icon"
 }
 ```
 #### Codigo de status
-|codigo | descricao
-|-------|----------
-|200 | categoria atualizada com sucesso
-|400| validação falhou. verifique o corpo da requisição
-|401 | não autenticado. Se autentique em /link
-|403 | NAO AUTORIZADO. essa categoria nao pertence ao usuario autenticado
-|404 | NAO EXISTE CATEGORIA COM O `id` INFORMADO
+
+|Código | Descrição
+|:---------:|----------|
+|201 | Cliente criado com sucesso.
+|400| A validação falhou. Verifique o corpo da requisição.
+|401 | Não autenticado. Necessário autenticação ../link.
+|403 | Não autorizado. Esse cliente nao pertence ao usuário autenticado.
+|404 | Não existe cliente com o `id` informado.
