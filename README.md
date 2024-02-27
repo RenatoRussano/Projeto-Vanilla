@@ -4,12 +4,12 @@ Construção da API para consumo futuro.
 
 ## Requisitos
 
-- [     ] CRUD de categorias
-- [     ] CRUD DE CATEGORIAS
-- [     ] CRUD DE MOVIMENTAÇÕES
-- [     ] CRUD DE USUÁRIOS
-- [     ] AUTENTICACAO
-- [     ] DASHBOARD
+- [] CRUD de categorias
+- [] CRUD DE CATEGORIAS
+- [] CRUD DE MOVIMENTAÇÕES
+- [] CRUD DE USUÁRIOS
+- [] AUTENTICACAO
+- [] DASHBOARD
 
 ## DOCUMENTAÇÃO DA API
 
