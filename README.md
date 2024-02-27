@@ -5,7 +5,7 @@ Desenvolvida para integrar perfeitamente frontend e backend, nossa API oferece s
 Sua escalabilidade e flexibilidade são incomparáveis, seguindo os padrões RESTful mais avançados e as melhores práticas de codificação. 
 
 ## Figma
-> Acompanhe o projeto no [Figma](#https://www.figma.com/file/bttjiVEWWnXBX94D5sy1E7/Vanilla-551325?type=design&node-id=0%3A1&mode=design&t=nErIXMAJZodXbkGg-1) ou no [Trello](#https://trello.com/invite/b/Z8ans0Wy/ATTI2e95d85a93f86da7afa9d4468b739b4827F539C9/vanilla).
+> Acompanhe o projeto no [Figma](https://www.figma.com/file/bttjiVEWWnXBX94D5sy1E7/Vanilla-551325?type=design&node-id=0%3A1&mode=design&t=nErIXMAJZodXbkGg-1) ou no [Trello](https://trello.com/invite/b/Z8ans0Wy/ATTI2e95d85a93f86da7afa9d4468b739b4827F539C9/vanilla).
 
 ## Requisitos
 
