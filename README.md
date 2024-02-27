@@ -1,8 +1,11 @@
 # Projeto Vanilla
 
-A solução definitiva para gerenciar usuários com nossa API de cadastro! 
+>A solução definitiva para gerenciar usuários com nossa API de cadastro! 
 Desenvolvida para integrar perfeitamente frontend e backend, nossa API oferece segurança de dados de última geração, com autenticação e autorização robustas. 
 Sua escalabilidade e flexibilidade são incomparáveis, seguindo os padrões RESTful mais avançados e as melhores práticas de codificação. 
+
+## Figma
+> Acompanhe o projeto no [`Figma`](#https://www.figma.com/file/bttjiVEWWnXBX94D5sy1E7/Vanilla-551325?type=design&node-id=0%3A1&mode=design&t=nErIXMAJZodXbkGg-1) ou no [`Trello`](#https://trello.com/invite/b/Z8ans0Wy/ATTI2e95d85a93f86da7afa9d4468b739b4827F539C9/vanilla).
 
 ## Requisitos
 
@@ -20,8 +23,8 @@ Sua escalabilidade e flexibilidade são incomparáveis, seguindo os padrões RES
 - [Listar clientes](#listar-clientes)
 - [Cadastrar clientes](#cadastrar-clientes)
 - [Detalhar clientes](#detalhar-clientes)
-- [Apagar clientes](#)
-- [Atualizar clientes](#)
+- [Apagar clientes](#apagar-clientes)
+- [Atualizar clientes](#atualizar-clientes)
 
 
 ### Listar Clientes
@@ -54,7 +57,7 @@ Sua escalabilidade e flexibilidade são incomparáveis, seguindo os padrões RES
 
 `POST` /clientes
 
-> Cadastra uma categoria com os dados enviados no corpo da requisição. 
+>Cadastra uma categoria com os dados enviados no corpo da requisição. 
 
 #### Corpo da requisição
 
@@ -124,7 +127,7 @@ Sua escalabilidade e flexibilidade são incomparáveis, seguindo os padrões RES
 
 `DELETE` /clientes/`id`
 
-Apaga o cliente selecionado com o `id` informado no path.
+>Apaga o cliente selecionado com o `id` informado no path.
 
 #### codigo de status
 
@@ -139,7 +142,7 @@ Apaga o cliente selecionado com o `id` informado no path.
 
 `PUT`  /clientes/`id`
 
-Atualiza os dados do cliente com o `id` informado no path, utilizando as informações do corpo da requisição.
+>Atualiza os dados do cliente com o `id` informado no path, utilizando as informações do corpo da requisição.
 
 #### Corpo da requisição
 
