@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/RenatoRussano/Projeto-Vanilla/main/VANILLA_WIDE_PURPLE.png)
+
 # Projeto Vanilla
 
 >A solução definitiva para gerenciar usuários com nossa API de cadastro! 
