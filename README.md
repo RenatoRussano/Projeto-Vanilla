@@ -6,12 +6,12 @@ Sua escalabilidade e flexibilidade são incomparáveis, seguindo os padrões RES
 
 ## Requisitos
 
-- [] CRUD de Clientes
-- [] CRUD de produto
-- [] CRUD de usuários
-- [] CRUD de ordem de serviço
-- [] Autenticação
-- [] Dashboard
+- [ ] CRUD de Clientes
+- [ ] CRUD de produto
+- [ ] CRUD de usuários
+- [ ] CRUD de ordem de serviço
+- [ ] Autenticação
+- [ ] Dashboard
 
 ## Documentação da API
 
